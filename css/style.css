@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(to right, #155a96, #14D068);
+  background: linear-gradient(to right, #155a96, #14d068);
   padding: 0;
   text-align: center;
 }
@@ -71,6 +71,16 @@ body {
   cursor: pointer;
 }
 
+.verde {
+  border-color: #09a14d;
+  color: #09a14d;
+}
+
+.verde:hover {
+  background-color: #09a14d;
+  color: #d9d9d9;
+}
+
 .homeButton-container {
   margin-bottom: 30px;
 }
@@ -86,10 +96,18 @@ body {
   margin-top: 17px;
 }
 
-.searchBox-container {
+.info-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 20px;
+}
+
+.searchBox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 27px;
 }
 
 .searchBox {
@@ -102,6 +120,31 @@ body {
   font-size: 17px;
 }
 
+.logoSearch {
+  width: 30px;
+}
+
+.searchBox-container button {
+  background-color: transparent;
+  border: none;
+}
+
+.searchBox-container button:hover {
+  cursor: pointer;
+}
+
+.results {
+  margin-bottom: 220px;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
 main {
   padding: 20px;
 }
@@ -112,12 +155,12 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 26px;
 }
 
 h2 {
   margin-top: 25px;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 p {
@@ -126,7 +169,7 @@ p {
 }
 
 table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
   margin-top: 20px;
 }
@@ -145,7 +188,7 @@ footer {
   color: white;
   text-align: center;
   padding: 15px 0;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .imagem {
@@ -171,3 +214,24 @@ footer {
   width: 200px;
   height: auto;
 }
+
+
+/* ESTILOS REFERENTES A PÁGINA DA COLETA SELETIVA */
+
+body.seletiva h1, body.seletiva h2 {
+  color: #09a14d;
+}
+
+body.seletiva .button {
+  border-color: #09a14d;
+  color: #09a14d;
+}
+
+body.seletiva .button:hover {
+  background-color: #09a14d;
+  color: #d9d9d9;
+}
+
+/* .button .seletiva {
+  border-color: #09a14d;
+} */

@@ -11,7 +11,6 @@
     <img src="assets/logoMaringa.png" alt="Prefeitura de Maringá" />
     <nav class="nav-menu">
       <a href="index.html">Início</a>
-      <a href="conscientizacao.html">Conscientização</a>
       <a href="mapa.html">Pontos de Coleta</a>
     </nav>
   </header>
@@ -29,14 +28,43 @@
             <img src="./assets/caminhaoPlace.png" alt="Imagem de um caminhão de coleta de lixo indo em direção a um marcador">
         </div>
     </div>
-       
-    <h2>Cronograma de Coleta do dia:</h2>
-    <table>
-      <thead>
-        <tr><th>Dia</th><th>Bairros</th><th>Tipo</th></tr>
-      </thead>
-      <tbody id="tabela-cronograma"></tbody>
-    </table>
+
+    <div class="info-container">
+
+      <div>
+        <h2>Cronograma de Coleta do dia</h2>
+				<div class="table-container">
+					<table>
+            <thead>
+                <tr>
+									<th>Locais</th>
+									<th>Período</th>
+								</tr>
+            </thead>
+            <tbody id="tabela-cronograma"></tbody>
+        	</table>
+				</div>
+      </div>
+
+      <div>
+    		<div>
+					<h2>Pesquisa</h2>
+					<p>Digite o nome do bairro que deseja consultar o cronograma</p>
+        </div>
+          
+        <div class="searchBox-container">
+          <input class="searchBox" type="text" placeholder="Ex. Avenida Brasil">
+          <button><img src="./assets/searchIcon.png" alt="icone de pesquisa" class="logoSearch"></button>
+        </div>
+
+        <div class="results">
+					<h3></h3>
+					<p></p>
+        </div>
+      </div>
+
+    </div>
+    
   </main>
   
   <footer>

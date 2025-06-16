@@ -6,20 +6,20 @@
   <title>Cronograma de Coleta</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="seletiva">
   <header class="header">
     <img src="assets/logoMaringa.png" alt="Prefeitura de Maringá" />
     <nav class="nav-menu">
         <a href="index.html">Início</a>
-        <a href="conscientizacao.html">Conscientização</a>
         <a href="mapa.html">Pontos de Coleta</a>
     </nav>
   </header>
 
   <main>
     <div class="homeButton-container">
-        <a href="index.html" class="button back">Voltar</a>
+        <a href="index.html" class="button back seletiva">Voltar</a>
     </div>
+
     <div class="logoTitle-container">
         <div>
             <h1>Segunda-feira</h1>
@@ -28,21 +28,41 @@
             <img src="./assets/caminhaoPlace.png" alt="Imagem de um caminhão de coleta de lixo indo em direção a um marcador">
         </div>
     </div>
-    <div>
+
+    <div class="info-container">
+
+      <div>
         <h2>Cronograma de Coleta do dia</h2>
-        <table>
+				<div class="table-container">
+					<table>
             <thead>
-                <tr><th>Dia</th><th>Bairros</th><th>Tipo</th></tr>
+                <tr>
+									<th>Locais</th>
+									<th>Período</th>
+								</tr>
             </thead>
             <tbody id="tabela-cronograma"></tbody>
-        </table>
-    </div>
-    <div>
-        <h2>Pesquisa</h2>
-        <div class="searchBox-container">
-            <input class="searchBox" type="text">
+        	</table>
+				</div>
+      </div>
+
+      <div>
+    		<div>
+					<h2>Pesquisa</h2>
+					<p>Digite o nome do bairro que deseja consultar o cronograma</p>
         </div>
-        
+          
+        <div class="searchBox-container">
+          <input class="searchBox" type="text" placeholder="Ex. Avenida Brasil">
+          <button><img src="./assets/searchIconS.png" alt="icone de pesquisa" class="logoSearch"></button>
+        </div>
+
+        <div class="results">
+					<h3></h3>
+					<p></p>
+        </div>
+      </div>
+
     </div>
     
   </main>
