@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cronograma de Coleta</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body class="seletiva">
   <header class="header">
     <img src="assets/logoMaringa.png" alt="Prefeitura de Maringá" />
     <nav class="nav-menu">
-        <a href="index.html">Início</a>
-        <a href="mapa.html">Pontos de Coleta</a>
+      <a href="index.html">Início</a>
+      <a href="mapa.html">Pontos de Coleta</a>
     </nav>
   </header>
 
   <main>
     <div class="homeButton-container">
-        <a href="index.html" class="button back seletiva">Voltar</a>
+      <a href="index.html" class="button back seletiva">Voltar</a>
     </div>
 
     <div class="logoTitle-container">
-        <div>
-            <h1>Segunda-feira</h1>
-        </div>
-        <div>
-            <img src="./assets/caminhaoPlace.png" alt="Imagem de um caminhão de coleta de lixo indo em direção a um marcador">
-        </div>
+      <div>
+        <h1>Cronograma da Coleta Seletiva</h1>
+      </div>
+      <div>
+        <img src="./assets/caminhaoPlace.png"
+          alt="Imagem de um caminhão de coleta de lixo indo em direção a um marcador">
+      </div>
     </div>
 
     <div class="info-container">
 
       <div>
-        <h2>Cronograma de Coleta do dia</h2>
-				<div class="table-container">
-					<table>
+        <h2>Cronograma da Coleta seletiva</h2>
+        <div class="table-container">
+          <table>
             <thead>
-                <tr>
-									<th>Locais</th>
-									<th>Período</th>
-								</tr>
+              <tr>
+                <th>Período</th>
+                <th>Locais</th>
+              </tr>
             </thead>
             <tbody id="tabela-cronograma"></tbody>
-        	</table>
-				</div>
+          </table>
+          <div class="pagination-container">
+            <button id="btn-anterior" class="button back">Anterior</button>
+            <span id="info-pagina"></span>
+            <button id="btn-proximo" class="button">Próximo</button>
+          </div>
+        </div>
       </div>
 
       <div>
-    		<div>
-					<h2>Pesquisa</h2>
-					<p>Digite o nome do bairro que deseja consultar o cronograma</p>
+        <div>
+          <h2>Pesquise pelo seu bairro</h2>
+          <p>Digite o nome do bairro que deseja consultar o cronograma</p>
         </div>
-          
+
         <div class="searchBox-container">
-          <input class="searchBox" type="text" placeholder="Ex. Avenida Brasil">
+          <input class="searchBox" type="text" id="caixa-busca" placeholder="Ex. Avenida Brasil">
           <button><img src="./assets/searchIconS.png" alt="icone de pesquisa" class="logoSearch"></button>
         </div>
 
         <div class="results">
-					<h3></h3>
-					<p></p>
+          <h3></h3>
+          <p></p>
         </div>
       </div>
 
     </div>
-    
+
   </main>
 
   <footer>
@@ -73,4 +81,5 @@
 
   <script src="js/script.js"></script>
 </body>
+
 </html>

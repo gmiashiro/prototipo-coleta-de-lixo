@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cronograma de Coleta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cronograma de Coleta Comum</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <header class="header">
     <img src="assets/logoMaringa.png" alt="Prefeitura de Maringá" />
@@ -17,60 +19,63 @@
 
   <main>
     <div class="homeButton-container">
-        <a href="index.html" class="button back">Voltar</a>
+      <a href="index.html" class="button back">Voltar</a>
     </div>
 
     <div class="logoTitle-container">
-        <div>
-            <h1>Segunda-feira</h1>
-        </div>
-        <div>
-            <img src="./assets/caminhaoPlace.png" alt="Imagem de um caminhão de coleta de lixo indo em direção a um marcador">
-        </div>
+      <div>
+        <h1>Cronograma da Coleta Comum</h1>
+      </div>
+      <div>
+        <img src="./assets/caminhaoPlace.png"
+          alt="Imagem de um caminhão de coleta de lixo indo em direção a um marcador">
+      </div>
     </div>
 
     <div class="info-container">
 
       <div>
-        <h2>Cronograma de Coleta do dia</h2>
-				<div class="table-container">
-					<table>
+        <h2>Cronograma Completo</h2>
+        <div class="table-container">
+          <table>
             <thead>
-                <tr>
-									<th>Locais</th>
-									<th>Período</th>
-								</tr>
+              <tr>
+                <th>Dia da Semana</th>
+                <th>Bairro</th>
+                <th>Período</th>
+              </tr>
             </thead>
-            <tbody id="tabela-cronograma"></tbody>
-        	</table>
-				</div>
+            <tbody id="tabela-cronograma-comum"></tbody>
+          </table>
+          <div class="pagination-container">
+            <button id="btn-anterior-comum" class="button back">Anterior</button>
+            <span id="info-pagina-comum"></span>
+            <button id="btn-proximo-comum" class="button">Próximo</button>
+          </div>
+        </div>
       </div>
 
       <div>
-    		<div>
-					<h2>Pesquisa</h2>
-					<p>Digite o nome do bairro que deseja consultar o cronograma</p>
-        </div>
-          
-        <div class="searchBox-container">
-          <input class="searchBox" type="text" placeholder="Ex. Avenida Brasil">
-          <button><img src="./assets/searchIcon.png" alt="icone de pesquisa" class="logoSearch"></button>
+        <div>
+          <h2>Pesquise pelo seu bairro</h2>
+          <p>Digite o nome do bairro que deseja consultar o cronograma</p>
         </div>
 
-        <div class="results">
-					<h3></h3>
-					<p></p>
+        <div class="searchBox-container">
+          <input class="searchBox" type="text" id="caixa-busca-comum" placeholder="Ex. Zona 01">
+          <button><img src="./assets/searchIcon.png" alt="icone de pesquisa" class="logoSearch"></button>
         </div>
       </div>
 
     </div>
-    
+
   </main>
-  
+
   <footer>
     <p>&copy; 2025 - Prefeitura de Maringá</p>
   </footer>
 
   <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -1,8 +1,10 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   background-color: #f4f4f4;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header {
@@ -147,6 +149,7 @@ body {
 
 main {
   padding: 20px;
+  flex-grow: 1;
 }
 
 h1, h2 {
@@ -235,3 +238,38 @@ body.seletiva .button:hover {
 /* .button .seletiva {
   border-color: #09a14d;
 } */
+
+/* ESTILOS PARA O CONTAINER DE PAGINAÇÃO */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pagination-container span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Ajuste para que os botões de paginação não sejam tão grandes */
+.pagination-container .button {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+}
+
+/* Estilo para botão desabilitado */
+.pagination-container .button:disabled {
+  border-color: #ccc;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-container .button:disabled:hover {
+  background-color: transparent;
+  color: #ccc;
+}
+
+/*----------------------------------------------*/
